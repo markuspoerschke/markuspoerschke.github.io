@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markus Poerschke</title>
+    <link>/</link>
+    <description>Recent content on Markus Poerschke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Good Commit Messages</title>
+      <link>/blog/good-commit-messages/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/good-commit-messages/</guid>
+      <description>Personally I like to look at the commit history of different projects. Often I find that the commit messages provide only little information about the actual changes in the code.
+Good commit messages help
+ in the review process, when creating changelogs, to be capable of tracking the changes to the source code made by other software developers.  This means that good commit messages show whether you are a team player or not.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about-me/</guid>
+      <description>I am a software engineer from Velbert (Germany). I have been enthusiastic about software development for a long time. Starting with the creation of simple pages with HTML and CSS – PHP is now my programming language of choice.
+I am working at CARL von CHIARI in Düsseldorf. I create web applications using PHP, Symfony and TYPO3.
+In my spare time I am finishing my Master in IT Management at the FOM University in Düsseldorf.</description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>/imprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/imprint/</guid>
+      <description>This imprint applies to:
+ Website: https://markus.poerschke.nrw Twitter: https://twitter.com/markuspoerschke Xing: https://www.xing.com/profile/Markus_Poerschke2 LinkedIn: https://www.linkedin.com/in/markuspoerschke/  Responsible person  Markus Poerschke
+Am Diependal 12a
+42551 Velbert
+Germany  Contact Email: markus@poerschke.nrw</description>
+    </item>
+    
+  </channel>
+</rss>

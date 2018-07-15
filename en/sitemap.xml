@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/blog/good-commit-messages/</loc>
+    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/blog/gute-commit-messages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/good-commit-messages/"
+                />
+  </url>
+  
+  <url>
+    <loc>/about-me/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/ueber-mich/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/about-me/"
+                />
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/imprint/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/imprint/"
+                />
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-07-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+</urlset>

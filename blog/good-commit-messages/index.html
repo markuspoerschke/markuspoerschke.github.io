@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Good Commit Messages &middot; Markus Poerschke</title>
+
+    
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+
+    <meta name="generator" content="Hugo 0.43">
+
+    
+        
+            <link rel="alternate" href="/de/blog/gute-commit-messages/" hreflang="de">
+        
+    
+</head>
+<body>
+
+
+<header>
+    <div class="container">
+        <div class="page-title">
+            <a href="/">Markus Poerschke</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/about-me/">About Me</a>
+                </li>
+                <li>
+                    <a href="/imprint/">Imprint</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="alternative-languages">
+            
+            <ul>
+                
+                <li>
+                    <a href="/de/blog/gute-commit-messages/">Deutsch</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</header>
+
+
+<div class="container content">
+    <h1>Good Commit Messages</h1>
+    
+        <aside class="article-meta">
+            <time datetime="2018-07-08T00:00:00Z">2018-07-08</time>,
+            4 minutes read
+        </aside>
+    
+    
+
+<p>Personally I like to look at the commit history of different projects.
+Often I find that the commit messages provide only little information about the actual changes in the code.</p>
+
+<p>Good commit messages help</p>
+
+<ol>
+<li>in the review process,</li>
+<li>when creating changelogs,</li>
+<li>to be capable of tracking the changes to the source code made by other software developers.</li>
+</ol>
+
+<p>This means that good commit messages show whether you are a team player or not.
+In general: source code is mainly there for other people to read and understand.</p>
+
+<p>From practical experience, the following form of commit message has proven to be optimal for me:</p>
+
+<pre><code class="language-text">WEB-123 Summary of the commit (less than 50 chars)
+
+The commit message should begin with the task ID of the ticket system 
+followed by a short summary. The first line may not exceed 50 
+characters because some software like GitHub will strip the rest of 
+the line.
+
+The following text can be structured into paragraphs.
+</code></pre>
+
+<p>The first line is the summary of the change and is limited to 50 characters, so that the content is not shortened if possible.
+For more comprehensive changes, a more detailed description can be given in several paragraphs.</p>
+
+<p>I work with <a href="https://www.atlassian.com/software/jira">Jira</a> on most projects.
+There, the ticket number consists of a sequence of letters followed by a hyphen and a number.
+If this key is placed in front of the commit message, the search for the tasks belonging to this commit is simplified a lot.</p>
+
+<p>The summary in the first line and the description text should refer to the changes to the source code. You should answer</p>
+
+<p>The summary in the first line and the description text should refer to the change of the commit.
+You should explain <em>what</em> was changed and <em>why</em> it was changed instead of <em>how</em> it was changed.</p>
+
+<h3 id="seven-rules">Seven Rules</h3>
+
+<p>In his blog article <a href="https://chris.beams.io/posts/git-commit/">&ldquo;How to Write a Git Commit Message&rdquo;</a> Chris Beams sets out seven rules for commit messages:</p>
+
+<ol>
+<li>separate the subject from the body with a blank line</li>
+<li>limit the subject line to 50 characters</li>
+<li>start the first line with a capital letter</li>
+<li>omit the dot at the end of the first line</li>
+<li>use the imperative in the subject line</li>
+<li>wrap the body after 72 characters</li>
+<li>use the body to explain <em>what</em> and <em>why</em> instead of <em>how</em></li>
+</ol>
+
+<h3 id="language">Language</h3>
+
+<p>English is the <a href="https://en.wikipedia.org/wiki/Lingua_franca">Lingua Franca</a> of computer science.
+Functions, variables and comments are written in English in most software projects.
+The same should apply to commit messages.
+The version history can still be important for a developer even years later.
+Even if all employees currently speak German, for example, English should still be used.
+This guarantees working in an international team.</p>
+
+<h3 id="prepend-ticket-number">Prepend ticket number</h3>
+
+<p>Especially in large projects, the use of ticket numbers in commit messages is a big advantage.
+Usually the tickets contain additional information that can help with later research in the source code.
+In Jira, for example, a ticket number consists of a sequence of letters followed by a hyphen and a number.
+This makes it easier for other developers to search for the corresponding tasks in the ticket system.</p>
+
+<p>In addition, the ticket numbers can be used to check which tasks exist in a release.
+With a simple command on the prompt you can list all tickets that are available in a release.
+The following command lists all ticket numbers in Git that have been implemented in a release:</p>
+
+<pre><code class="language-bash">git log 2.4.0..2.5.0 --pretty=oneline | perl -ne '{ /(\w+)-(\d+)/ &amp;&amp; print &quot;$1-$2,&quot;}'
+</code></pre>
+
+<p>In the example, <code>2.5.0</code> represents the version to be looked at and <code>2.4.0</code> is the previous version.
+In this way, for example, the <em>develop</em> branch can also be compared with the <em>master</em>:</p>
+
+<pre><code class="language-bash">git log 2.4.0..2.5.0 --pretty=oneline | perl -ne '{ /(\w+)-(\d+)/ &amp;&amp; print &quot;$1-$2,&quot;}'
+</code></pre>
+
+<p>The result is a comma-separated list of keys (e.g. <code>WEB-123,WEB-456,WEB-789</code>), which can then be used in a JQL query in Jira.
+The query then looks like this:</p>
+
+<pre><code class="language-JQL">key IN (WEB-123,WEB-456,WEB-789)
+</code></pre>
+
+<h3 id="set-up-pre-receive-hook">Set up pre-receive hook</h3>
+
+<p>Some of the rules described here can be forced by a pre-receive hook.
+In GitLab, so-called &ldquo;push rules&rdquo; can be defined for this purpose.
+To force the prefix of a Jira ticket number, the following regular expression can be used:</p>
+
+<pre><code class="language-regexp">[A-Z]{2,6}-\d+
+</code></pre>
+
+<p>If the project key is known, the concrete key can be set instead of <code>[A-Z]{3,6}</code>.
+In our example for the project <code>WEB</code> the expression would look like this:</p>
+
+<pre><code class="language-regexp">WEB-\d+
+</code></pre>
+
+<p>The push rules can be set in GitLab under <em>Repository</em> &gt; <em>Repository</em> &gt; <em>Push Rules</em>.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Good commit messages help to create software.
+So be sure to write your messages in a way that they will help other developers and, if in a moment of doubt, you, too.</p>
+
+<ol>
+<li>follow the seven rules</li>
+<li>always write commit messages in English</li>
+<li>always add a ticket number</li>
+<li>check that rules for commit messages are being followed automatically</li>
+</ol>
+
+</div>
+
+<div class="container">
+    <footer>
+        <p>&copy; 2018 <a href="/">Markus Poerschke</a></p>
+    </footer>
+</div>
+</body>
+</html>
+

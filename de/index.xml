@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markus Poerschke</title>
+    <link>/de/</link>
+    <description>Recent content on Markus Poerschke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/de/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gute Commit-Messages</title>
+      <link>/de/blog/gute-commit-messages/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/de/blog/gute-commit-messages/</guid>
+      <description>&lt;p&gt;Persönlich schaue ich mir gerne die Commit-History von verschiedenen Projekten an.
+Häufig stelle ich fest, dass die Commit-Messages nur wenig Aufschluss über die tatsächlichen Änderungen im Code geben.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Impressum</title>
+      <link>/de/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/de/impressum/</guid>
+      <description>Dieses Impressum gilt für:
+ Website: https://markus.poerschke.nrw Twitter: https://twitter.com/markuspoerschke Xing: https://www.xing.com/profile/Markus_Poerschke2 LinkedIn: https://www.linkedin.com/in/markuspoerschke/  Verantwortlicher  Markus Poerschke
+Am Diependal 12a
+42551 Velbert
+Deutschland  Kontakt E-Mail: markus@poerschke.nrw</description>
+    </item>
+    
+    <item>
+      <title>Über mich</title>
+      <link>/de/ueber-mich/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/de/ueber-mich/</guid>
+      <description>Ich bin Software-Engineer aus Velbert. Software-Entwicklung begeistert mich schon lange. Angefangen mit der Erstellung von einfachen Seiten mit HTML und CSS, ist PHP nun die Programmiersprache meines vertrauens.
+Hauptberuflich arbeite ich für CARL von CHIARI in Düsseldorf. Ich erstelle Web-Anwendungen mit PHP, Symfony und TYPO3.
+In meiner Freizeit beende ich gerade meinen Master in IT-Management an der FOM Hochschule in Düsseldorf. Dort habe ich bereits meinen Bachelor of Science in Wirtschaftsinformatik erfolgreich abgeschlossen.</description>
+    </item>
+    
+  </channel>
+</rss>
