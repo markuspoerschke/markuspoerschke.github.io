@@ -6,7 +6,7 @@
     <description>Recent content on Markus Poerschke</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Good Commit Messages</title>
       <link>/blog/good-commit-messages/</link>
-      <pubDate>Sun, 08 Jul 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/blog/good-commit-messages/</guid>
       <description>Personally I like to look at the commit history of different projects. Often I find that the commit messages provide only little information about the actual changes in the code.
